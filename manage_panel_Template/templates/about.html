@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<style>
+    /* стили для страницы about.html */
+    body {
+        background-image: url("https://pureprotein.ru/img/about_header.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    h1 {
+        color: green;
+    }
+    p {
+        font-style: italic;
+    }
+    a {
+        color: red;
+    }
+    <ul>
+
+</style>
+<h1>{{ title }}</h1>
+<p>Ну здесь можно много что написать, особенно о том, как я могу в обозримом будущем применить
+Джанго освобожденного для своей задачи....Тут можно подумать, но пока понапишу всякого
+......можно например:</p>
+<a href="https://www.djangoproject.com/">ссылку на Джанго</a>
+{% endblock %}

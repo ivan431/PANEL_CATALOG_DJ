@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header',
+        'sidebar content';
+        gap:10
+}
+
+
+   .sidebar {
+       background-color: lightgreen;
+   }
+
+/* Стили для пунктов меню */
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+/* Стили для ссылок в пунктах меню */
+.sidebar li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Стили для основного содержимого */
+.content {
+  padding: 20px;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 5px
+}
