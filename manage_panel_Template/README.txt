@@ -1,6 +1,6 @@
 
 Выполнить по порядку
-1.git clone https://github.com/ivan431/task_14.11.23.git из гитхаба
+1.git clone https://github.com/ivan431/PANEL_CATALOG_DJ.git из гитхаба
 2. Перейдите в папку склонированного репозитория с помощью команды
 `cd имя_папки_репозитория`.
 3.python -m venv venv - создаем вирт. окружение

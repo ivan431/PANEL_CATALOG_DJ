@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+
+<form action="{% url 'feedbacks_page' %}" method="POST">
+   {% csrf_token %}
+   <label for="full_name">ФИО</label>
+   <input name="full_name" id="full_name" required>
+   <label for="email">Email</label>
+   <input name="email" id="email" required>
+   <label for="review_text">Текст отзыва</label>
+   <textarea name="review_text" id="review_text" required></textarea>
+   <label for="checked">Проверено</label>
+   <input type="checkbox" name="checked" id="checked">
+   <button type="submit">Отправить</button>
+</form>
+
+{% endblock %}

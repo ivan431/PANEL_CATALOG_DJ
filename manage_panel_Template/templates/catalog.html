@@ -16,9 +16,16 @@ background: linear-gradient(90deg, rgba(150,199,203,1) 22%, rgba(91,148,111,0.73
     }
 </style>
 <h1>{{ title }}</h1>
-<ul>
-    <li>штука 1</li>
-    <li>штука 2</li>
-    <li>штука 3</li>
-</ul>
+
+{{products}}
+
+{% for el in products %}
+<div class="card">
+    <h3>{{el.name}}</h3>
+    <h4>{{el.price}}</h4>
+    <h4>{{el.description}}</h4>
+
+</div>
+{% endfor %}
+
 {% endblock %}
